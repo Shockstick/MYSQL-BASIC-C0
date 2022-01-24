@@ -9,22 +9,23 @@ K. Huntelaar, S. de Jong, N. Viergever, B. van Leer, J. Veltman, M. Dijks, D. Si
 -- Opdracht 5
 L. Sch ne, K. Lamprou, A. Younes, H. Ziyech, V. ?ern, L. Orejuela, A. Onana, M. Cassierra, K. Dolberg, M. W ber
 -- Opdracht 6 
-SELECT * FROM `players` WHERE club = "AZ Alkmaar" AND age;
+SELECT name, age FROM `players` WHERE 1;
 -- Opdracht 7 
-
+SELECT club, name, age FROM `players` WHERE 1;
 -- Opdracht 8
-
+SELECT * FROM `players` WHERE club = 'manchester city' AND nationality = 'brazil';
 -- Opdracht 9
-
+SELECT name FROM `players` WHERE age = 30 AND wage < 10000;
 -- Opdracht 10
-
+SELECT name, age FROM `players` WHERE nationality = 'Spain' OR nationality = 'Portugal';
 -- Opdracht 11
-
+SELECT name, age, club FROM `players` WHERE nationality = 'Portugal' OR club = 'Chelsea';
 -- Opdracht 12
-
+SELECT name, club FROM `players` WHERE age > 40 AND wage > 10000
 -- Opdracht 13
-
+SELECT * FROM `players` WHERE nationality = 'Netherlands' AND club = 'Ajax' OR 'FC Utrecht';
 -- Opdracht 14
-
+SELECT * FROM `players` WHERE nationality = 'England' AND age>20 AND wage>100000;
 -- Opdracht 15
+SELECT name, age, nationality FROM `players` WHERE nationality = 'Argentina' OR 'Brazil' AND age>25;
 
