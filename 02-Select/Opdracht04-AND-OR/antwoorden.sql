@@ -1,19 +1,19 @@
 -- Opdracht 1 
-Cesc F bregas, Diego Costa, Azpilicueta, Pedro, Marcos Alonso, Morata, 
+SELECT name, nationality, club FROM `players` WHERE nationality = 'Spain' AND club = 'Chelsea';
 -- Opdracht 2 
-Brahim D az, Jorge Cuenca, Abel Ruiz, Miranda,
+SELECT name, age, wage, nationality FROM `players` WHERE age = 17 AND nationality = 'Spain' AND wage = 15000;
 -- Opdracht 3
-J. Milner, D. Sturridge, S. Mignolet, A. Lallana, G. Wijnaldum, J. Henderson, A. Bogd n, Coutinho, N. Clyne, D. Lovren, D. Ings, J. Matip, A. Oxlade-Chamberlain, Roberto Firmino, J. Flanagan, L. Karius, Alberto Moreno, D. Ward, E. Can, S. Man, M. Salah, L. Markovi?, L. Jones, A. Robertson, C. Brannagan     
+SELECT name, age, club FROM `players` WHERE age > 20 AND club = 'Liverpool';     
 -- Opdracht 4
-K. Huntelaar, S. de Jong, N. Viergever, B. van Leer, J. Veltman, M. Dijks, D. Sinkgraven, A. Nouri, D. van de Beek, N. Alblas, F. de Jong, D. Dankerlui, C. Eiting, M. de Ligt, D. Zeefuik, J. Kluivert
+SELECT name, club FROM `players` WHERE nationality = 'Netherlands' AND club = 'Ajax';
 -- Opdracht 5
-L. Sch ne, K. Lamprou, A. Younes, H. Ziyech, V. ?ern, L. Orejuela, A. Onana, M. Cassierra, K. Dolberg, M. W ber
+SELECT name, club FROM `players` WHERE nationality < 'Netherlands' AND club = 'Ajax';
 -- Opdracht 6 
 SELECT name, age FROM `players` WHERE 1;
 -- Opdracht 7 
 SELECT club, name, age FROM `players` WHERE 1;
 -- Opdracht 8
-SELECT * FROM `players` WHERE club = 'manchester city' AND nationality = 'brazil';
+SELECT name, wage FROM `players` WHERE club = 'manchester city' AND nationality = 'brazil';
 -- Opdracht 9
 SELECT name FROM `players` WHERE age = 30 AND wage < 10000;
 -- Opdracht 10
