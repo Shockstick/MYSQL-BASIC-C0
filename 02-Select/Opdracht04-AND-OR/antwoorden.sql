@@ -9,9 +9,9 @@ SELECT name, club FROM `players` WHERE nationality = 'Netherlands' AND club = 'A
 -- Opdracht 5
 SELECT name, club FROM `players` WHERE nationality < 'Netherlands' AND club = 'Ajax';
 -- Opdracht 6 
-SELECT name, age FROM `players` WHERE 1;
+SELECT name, age FROM `players` ;
 -- Opdracht 7 
-SELECT club, name, age FROM `players` WHERE 1;
+SELECT club, name, age FROM `players` ;
 -- Opdracht 8
 SELECT name, wage FROM `players` WHERE club = 'manchester city' AND nationality = 'brazil';
 -- Opdracht 9
