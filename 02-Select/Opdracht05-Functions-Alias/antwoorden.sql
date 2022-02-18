@@ -1,7 +1,7 @@
 -- Opdracht 1 
 SELECT Max(wage) as hoogste_loon_speler_fc_utrecht FROM `players` WHERE club = 'FC utrecht';
 -- Opdracht 2 
-SELECT ROUND(wage) as afgeronde_gemiddelde_inkomen_wage FROM `players` WHERE wage;
+SELECT AVG(wage) as afgeronde_gemiddelde_inkomen_wage FROM `players`;
 -- Opdracht 3
 SELECT SUM(value) as Loon_FC_Groningen FROM `players` WHERE club = 'FC Groningen';
 -- Opdracht 4
@@ -13,8 +13,8 @@ SELECT AVG(wage) As Income_age_20 FROM `players` WHERE age < 20;
 -- Opdracht 7 
 SELECT AVG(wage) As Income_age_20 FROM `players` WHERE age > 20;
 -- Opdracht 8
-SELECT ROUND(value) As value_players_Chelsea FROM `players` WHERE club = 'Chelsea';
+SELECT SUM(value) As value_players_Chelsea FROM `players` WHERE club = 'Chelsea';
 -- Opdracht 9
-SELECT AVG(age) As afgeronde_leeftijd FROM `players` WHERE 1;
+SELECT ROUND(AVG(age)) As afgeronde_leeftijd FROM `players` WHERE 1;
 -- Opdracht 10
-SELECT club, ROUND(wage) as wage, ROUND(value) as value FROM `players` WHERE club = 'Liverpool';
+SELECT club, SUM(wage) as wage, ROUND(AVG(value)) as value FROM `players` WHERE club = 'Liverpool';
