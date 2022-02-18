@@ -23,9 +23,9 @@ SELECT name, age, club FROM `players` WHERE nationality = 'Portugal' OR club = '
 -- Opdracht 12
 SELECT name, club FROM `players` WHERE age > 40 AND wage > 10000
 -- Opdracht 13
-SELECT * FROM `players` WHERE nationality = 'Netherlands' AND club = 'Ajax' OR 'FC Utrecht';
+SELECT * FROM `players` WHERE nationality = 'Netherlands' AND (club = 'Ajax' OR club = 'FC Utrecht');
 -- Opdracht 14
 SELECT * FROM `players` WHERE nationality = 'England' AND age>20 AND wage>100000;
 -- Opdracht 15
-SELECT name, age, nationality FROM `players` WHERE nationality = 'Argentina' OR 'Brazil' AND age>25;
+SELECT name, age, nationality FROM `players` WHERE (nationality = 'Argentina' OR nationality = 'Brazil') AND age>25;
 
